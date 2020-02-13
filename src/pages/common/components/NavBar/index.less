@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.Button--mobile {
+  display: none;
+}
+.NavBar--mobile {
+  display: none;
+}
+.barsMenu {
+  margin-left: auto;
+  height: 32px;
+  padding: 6px;
+  margin-top: 8px;
+  display: none;
+  background: none;
+}
+.barsBtn {
+  display: none;
+  width: 20px;
+  height: 2px;
+  background: #ffffff;
+  position: relative;
+}
+.barsBtn:after,
+.barsBtn:before {
+  content: attr(x);
+  width: 20px;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 2px;
+  background: #ffffff;
+}
+.barsBtn:after {
+  top: auto;
+  bottom: -6px;
+}
+@media (max-width: 800px) {
+  .NavBar--desktop {
+    display: none;
+  }
+  .NavBar--mobile {
+    display: block;
+    margin-left: auto;
+  }
+  .Button--mobile {
+    display: initial;
+  }
+  .barsMenu {
+    display: block;
+  }
+}
